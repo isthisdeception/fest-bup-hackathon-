@@ -7,6 +7,7 @@
 ## Docker Fallback Image
 - **Registry**: GitHub Container Registry (GHCR)
 - **Image Reference (Tag)**: `ghcr.io/isthisdeception/gridwise-api:round1`
+- **Image Reference (Digest)**: `ghcr.io/isthisdeception/gridwise-api@sha256:9851cd12bd88887fc1069b3f45c144227069f0e454377e03d1237676c88d4b66`
 - **Exposed Port**: `8000`
 - **Service Binding**: `0.0.0.0:${PORT:-8000}`
 - **Non-Root User**: `appuser` (UID 10001)
