@@ -39,7 +39,7 @@ Hard Deadline (fill in): ____
 | 22 | COMPLETE | Latency: Cached p50=15.9ms p95=16.8ms; Unique p50=1.39s p95=2.20s (target <=5.0s, 3/3 pts); Readiness 150ms (<60s); LRU cache verified |
 | 23 | COMPLETE | Dockerfile + .dockerignore created; non-root user (appuser), 0.0.0.0:${PORT:-8000}; .dockerignore excludes .env and tests/; zero secret bake-in verified |
 | 24 | COMPLETE | GitHub private repo created & pushed to main; 0 secrets; verified via GitHub API: private=True, .env absent |
-| 25 | WAITING FOR HUMAN | Awaiting container registry choice & authentication |
+| 25 | IN PROGRESS | GHCR workflow created (.github/workflows/docker.yml); SUBMISSION.md created; pushing to trigger GitHub Actions build |
 | 26 | NOT STARTED | |
 | 27 | NOT STARTED | |
 | 28 | NOT STARTED | |
@@ -65,7 +65,7 @@ Antigravity must append one row here immediately after each human answer or each
 | Backup LLM provider | Option C: Implemented BACKUP_LLM_* fallback branch in code; unconfigured by default, activatable via env vars | Zero runtime overhead when unset; enables zero-downtime hot swap if primary provider degrades | 18 |
 | Docker image tag | `gridwise-api:round1` | Immutable tag adhering to participant guide requirements; excludes secrets & tests | 23 |
 | GitHub repository | `https://github.com/isthisdeception/fest-bup-hackathon-` (Private) | Created after reveal, pushed to main, verified private, zero secrets | 24 |
-| Container registry | **PENDING - HUMAN GATE G5 (Step 25)** | | 25 |
+| Container registry | Option B: GitHub Packages (GHCR) `ghcr.io/isthisdeception/gridwise-api:round1` via GitHub Actions | Cloud-native build and publish on GitHub Ubuntu runner without local Docker dependency | 25 |
 | Deployment platform | **PENDING - HUMAN GATE G6 (Step 26)** | | 26 |
 
 ---
