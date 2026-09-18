@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.git/
+.gitignore
+tests/
+*.log
+local_request.json
+requirements.lock.txt
