@@ -6,7 +6,7 @@ A robust, production-ready FastAPI microservice for 24-hour campus microgrid ene
 
 ## 1. Live Endpoint
 
-- **Service Base URL**: `http://<PENDING_AWS_VPS_IP>:8000` *(Being deployed on AWS VPS)*
+- **Service Base URL**: `https://gridwise-api-8b23.onrender.com`
 - **Health Check**: `GET /health`
 - **Schedule Optimization**: `POST /optimize-energy`
 

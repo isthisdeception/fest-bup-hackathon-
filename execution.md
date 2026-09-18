@@ -8,10 +8,10 @@
 
 ## Execution State
 
-Current Step: 26
-Status: WAITING FOR HUMAN (Gate G6)
+Current Step: 29
+Status: WAITING FOR HUMAN (Gate G8)
 Execution Start Time (fill in): 2026-09-18T20:06:48+06:00
-Hard Deadline (fill in): ____
+Hard Deadline (fill in): 2026-09-18T23:55:00+06:00
 
 | Step | Status | Notes |
 |------|--------|-------|
@@ -40,10 +40,10 @@ Hard Deadline (fill in): ____
 | 23 | COMPLETE | Dockerfile + .dockerignore created; non-root user (appuser), 0.0.0.0:${PORT:-8000}; .dockerignore excludes .env and tests/; zero secret bake-in verified |
 | 24 | COMPLETE | GitHub private repo created & pushed to main; 0 secrets; verified via GitHub API: private=True, .env absent |
 | 25 | COMPLETE | GHCR image pushed (round1, sha256:9851cd12...); verified publicly visible; SUBMISSION.md updated |
-| 26 | WAITING FOR HUMAN | Awaiting deployment platform choice & live public URL |
-| 27 | NOT STARTED | |
-| 28 | NOT STARTED | |
-| 29 | NOT STARTED | |
+| 26 | COMPLETE | Deployed to Render (https://gridwise-api-8b23.onrender.com); verified live /health and /optimize-energy |
+| 27 | COMPLETE | External verification PASSED: /health 200, 10/10 public samples PASS over live HTTPS, p50=1.70s p95=2.21s, avg quality=1.0000 |
+| 28 | COMPLETE | README.md complete covering all 17 sections, verified 0 secrets; pushed to GitHub |
+| 29 | WAITING FOR HUMAN | Awaiting 2-3 min screen-recording video link |
 | 30 | NOT STARTED | |
 
 Allowed statuses: `NOT STARTED`, `IN PROGRESS`, `BLOCKED`, `WAITING FOR HUMAN`, `COMPLETE`, `SKIPPED WITH REASON`.
@@ -66,7 +66,7 @@ Antigravity must append one row here immediately after each human answer or each
 | Docker image tag | `gridwise-api:round1` | Immutable tag adhering to participant guide requirements; excludes secrets & tests | 23 |
 | GitHub repository | `https://github.com/isthisdeception/fest-bup-hackathon-` (Private) | Created after reveal, pushed to main, verified private, zero secrets | 24 |
 | Container registry | Option B: GitHub Packages (GHCR) `ghcr.io/isthisdeception/gridwise-api:round1` via GitHub Actions | Cloud-native build and publish on GitHub Ubuntu runner without local Docker dependency | 25 |
-| Deployment platform | **PENDING - HUMAN GATE G6 (Step 26)** | | 26 |
+| Deployment platform | Render (`https://gridwise-api-8b23.onrender.com`) | Free, private repo integration, HTTPS, verified 10/10 public samples | 26 |
 
 ---
 

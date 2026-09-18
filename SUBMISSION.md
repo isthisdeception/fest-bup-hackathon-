@@ -5,7 +5,7 @@ This document collects all required deliverables for the BUP CSE Fest 2026 GridW
 ---
 
 ## 1. Hosted Public API Service
-- **Service Base URL**: `http://<PENDING_AWS_VPS_IP>:8000` *(Being deployed on AWS VPS)*
+- **Service Base URL**: `https://gridwise-api-8b23.onrender.com`
 - **Health Check Endpoint**: `GET /health` -> `{"status":"ok"}`
 - **Optimization Endpoint**: `POST /optimize-energy`
 
